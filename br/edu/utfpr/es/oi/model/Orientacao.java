@@ -1,5 +1,6 @@
 package br.edu.utfpr.es.oi.model;
 import br.edu.utfpr.es.oi.model.Reuniao;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -13,7 +14,11 @@ public class Orientacao {
     private Professor professor;
     private StatusEnum status;
     private SolicitanteEnum solicitante;
-    
+
+    public Orientacao() {
+        reuniao = new ArrayList<>();
+        entrega = new ArrayList<>();
+    }
 
     public int getDataInicio() {
         return dataInicio;

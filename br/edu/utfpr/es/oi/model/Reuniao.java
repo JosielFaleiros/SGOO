@@ -1,15 +1,20 @@
 package br.edu.utfpr.es.oi.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Reuniao {
 
     private String assunto;
-    private List<Historico> historico;	
+    private List<Historico> historico;
     private Date data;
     private StatusEnum status;
     private SolicitanteEnum solicitante;
+    
+    public Reuniao(){
+        historico = new ArrayList<>();
+    }
 
     public Date getData() {
         return data;
