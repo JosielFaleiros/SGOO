@@ -9,6 +9,7 @@ import br.edu.utfpr.es.oi.gui.Inicio;
 import br.edu.utfpr.es.oi.gui.JDialogAluno;
 import br.edu.utfpr.es.oi.gui.JDialogProfessor;
 import br.edu.utfpr.es.oi.model.Usuario;
+import br.edu.utfpr.es.oi.model.UsuarioBO;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.event.ChangeEvent;
@@ -53,6 +54,10 @@ public class ControllerPrincipal{
          return new ActionListener() {
              @Override public void actionPerformed (ActionEvent e) {
                  Usuario usuario = new Usuario();
+                 usuario.setEmail(frameLogin.getjTextFieldUsuario().getText());
+                 usuario.setSenha(String.valueOf( frameLogin.getjPasswordFieldSenha().getPassword() ));
+                 UsuarioBO userBo = new UsuarioBO();
+                 userBo.registrarUsuario(usuario);
              }
          };
      }
