@@ -5,33 +5,82 @@ import java.util.List;
 
 public class Orientacao {
 
-	private int dataInicio;
-	private int dataFim;
-	private List<Reuniao> reuniao;
-        private List<Entrega> entrega;
-        private Aluno aluno;
-        private Professor professor;
-        private String status;
-        private String solicitante;
+    private int dataInicio;
+    private int dataFim;
+    private List<Reuniao> reuniao;
+    private List<Entrega> entrega;
+    private Aluno aluno;
+    private Professor professor;
+    private StatusEnum status;
+    private SolicitanteEnum solicitante;
+    
 
-	public void aceitarOrientacao() {
+    public int getDataInicio() {
+        return dataInicio;
+    }
 
-	}
+    public void setDataInicio(int dataInicio) {
+        this.dataInicio = dataInicio;
+    }
 
-	public void solicitarOrientacao() {
+    public int getDataFim() {
+        return dataFim;
+    }
 
-	}
+    public void setDataFim(int dataFim) {
+        this.dataFim = dataFim;
+    }
 
-	public void adicionarReuniao() {
+    public List<Reuniao> getReuniao() {
+        return reuniao;
+    }
 
-	}
+    public void setReuniao(List<Reuniao> reuniao) {
+        this.reuniao = reuniao;
+    }
 
-	public void removerReuniao() {
+    public List<Entrega> getEntrega() {
+        return entrega;
+    }
 
-	}
+    public void setEntrega(List<Entrega> entrega) {
+        this.entrega = entrega;
+    }
 
-	public void crudEntrega() {
+    public Aluno getAluno() {
+        return aluno;
+    }
 
-	}
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
+
+    public Professor getProfessor() {
+        return professor;
+    }
+
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
+    }
+
+    public StatusEnum getStatus() {
+        return status;
+    }
+
+    public void setStatus(StatusEnum status) {
+        this.status = status;
+    }
+
+    public SolicitanteEnum getSolicitante() {
+        return solicitante;
+    }
+
+    public void setSolicitante(SolicitanteEnum solicitante) {
+        this.solicitante = solicitante;
+    }
+
+    void addReuniao(Reuniao reuniao) {
+        this.reuniao.add(reuniao);
+    }
 
 }

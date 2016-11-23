@@ -20,8 +20,8 @@ public class OrientacaoBO {
         OrientacaoDAO orientdao = new OrientacaoDAO();
         Orientacao orientacao = new Orientacao();
         orientacao.setSolicitante(SolicitanteEnum.ALUNO);
-        orientacao.addAluno(aluno);
-        orientacao.addProfessor(professor);
+        orientacao.setAluno(aluno);
+        orientacao.setProfessor(professor);
         orientacao.setStatus(StatusEnum.SOLICITADA);
         orientdao.adicionarOrientacao(orientacao);
     }

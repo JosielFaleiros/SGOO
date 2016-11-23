@@ -5,10 +5,14 @@ import java.util.List;
 
 public class Professor extends Usuario {
 
-	private int siape;
+    private int siape;
 
-	public void novoProfessor() {
+    public int getSiape() {
+        return siape;
+    }
 
-	}
+    public void setSiape(int siape) {
+        this.siape = siape;
+    }
 
 }

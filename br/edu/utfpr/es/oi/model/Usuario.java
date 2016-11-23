@@ -9,6 +9,11 @@ public class Usuario {
 
     private int id;
     private String nome;
+    private String email;
+    private String senha;
+    private String areainteresse;
+    private String departamento;
+    private List<TempoLivre> tempoLivre;
 
     public int getId() {
         return id;
@@ -64,15 +69,6 @@ public class Usuario {
 
     public void setTempoLivre(List<TempoLivre> tempoLivre) {
         this.tempoLivre = tempoLivre;
-    }
-    private String email;
-    private String senha;
-    private String areainteresse;
-    private String departamento;
-    private List<TempoLivre> tempoLivre;
-
-    public void crudTempoLivre() {
-
     }
 
 }

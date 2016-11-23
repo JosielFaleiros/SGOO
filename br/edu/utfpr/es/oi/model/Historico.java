@@ -3,11 +3,22 @@ import br.edu.utfpr.es.oi.model.Reuniao;
 
 public class Historico {
 
-	private String assunto;
-	private String recomendacao;
+    private String assunto;
+    private String recomendacao;
 
-	public void novoHistorico() {
+    public String getAssunto() {
+        return assunto;
+    }
 
-	}
+    public void setAssunto(String assunto) {
+        this.assunto = assunto;
+    }
 
+    public String getRecomendacao() {
+        return recomendacao;
+    }
+
+    public void setRecomendacao(String recomendacao) {
+        this.recomendacao = recomendacao;
+    }
 }
