@@ -27,13 +27,13 @@ public class UsuarioBO {
         return true;
     }
     
-    public boolean realizarLogin(Usuario usuario){
+    public Usuario realizarLogin(Usuario usuario){
         UsuarioDAO userdao = new UsuarioDAO();
         Usuario temp = userdao.buscarUsuario(usuario);
         if(temp != null){
-            if(temp.getEmail().equals(usuario.getEmail()) && temp.getSenha().equals(usuario.getSenha())) return true;
+            if(temp.getEmail().equals(usuario.getEmail()) && temp.getSenha().equals(usuario.getSenha())) return temp;
         }
-        return false;
+        return null;
     }
     
     public List<Usuario> buscarAlunosByQuery(String query){

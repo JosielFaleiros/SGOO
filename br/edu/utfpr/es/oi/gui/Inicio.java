@@ -127,11 +127,7 @@ public class Inicio extends javax.swing.JFrame {
         jPanelCadastroLogin.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 60, 25));
 
         jButtonEntrar.setText("Entrar");
-        jButtonEntrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonEntrarActionPerformed(evt);
-            }
-        });
+
         jPanelCadastroLogin.add(jButtonEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, 100, 40));
 
         jLabelSgoo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -157,10 +153,6 @@ public class Inicio extends javax.swing.JFrame {
 
         setSize(new java.awt.Dimension(416, 338));
         setLocationRelativeTo(null);
-    }
-
-    private void jButtonEntrarActionPerformed(java.awt.event.ActionEvent evt) {
-        dispose();
     }
 
 

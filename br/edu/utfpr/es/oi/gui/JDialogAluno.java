@@ -51,9 +51,9 @@ public class JDialogAluno extends javax.swing.JDialog {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jButtonReuniao = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jButtonEditar = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
-        jButton1 = new javax.swing.JButton();
+        jButtonSalvar = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         jButtonReuniao1 = new javax.swing.JButton();
 
@@ -177,18 +177,18 @@ public class JDialogAluno extends javax.swing.JDialog {
         });
         jPanel1.add(jButtonReuniao, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, 41, 25));
 
-        jButton2.setText("Editar");
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 100, 20));
+        jButtonEditar.setText("Editar");
+        jPanel1.add(jButtonEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 100, 20));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 550, 10));
 
-        jButton1.setText("Salvar");
-        jButton1.setEnabled(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonSalvar.setText("Salvar");
+        jButtonSalvar.setEnabled(false);
+        jButtonSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 100, 20));
+        jPanel1.add(jButtonSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 100, 20));
 
         jLabel9.setText("Buscar Usuários:");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, -1, -1));
@@ -234,8 +234,8 @@ public class JDialogAluno extends javax.swing.JDialog {
 
      
     
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButtonSalvar;
+    private javax.swing.JButton jButtonEditar;
     private javax.swing.JButton jButtonOrientador;
     private javax.swing.JButton jButtonReuniao;
     private javax.swing.JButton jButtonReuniao1;

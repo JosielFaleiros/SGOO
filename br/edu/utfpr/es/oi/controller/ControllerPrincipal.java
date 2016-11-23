@@ -9,6 +9,7 @@ import br.edu.utfpr.es.oi.gui.Inicio;
 import br.edu.utfpr.es.oi.gui.JDialogAluno;
 import br.edu.utfpr.es.oi.gui.JDialogCadastrarUsuario;
 import br.edu.utfpr.es.oi.gui.JDialogProfessor;
+import br.edu.utfpr.es.oi.model.SolicitanteEnum;
 import br.edu.utfpr.es.oi.model.Usuario;
 import br.edu.utfpr.es.oi.model.UsuarioBO;
 import br.edu.utfpr.es.oi.util.Util;
@@ -44,13 +45,20 @@ public class ControllerPrincipal{
     }
 
     public ActionListener fazerLoginListener () {
-         return new ActionListener() {
-             @Override public void actionPerformed (ActionEvent e) {
-                 Usuario usuario = new Usuario();
-                 usuario.setEmail(frameLogin.getjTextFieldUsuario().getText());
-                 usuario.setSenha(String.valueOf( frameLogin.getjPasswordFieldSenha().getPassword() ));
-                 UsuarioBO userBo = new UsuarioBO();
-                 userBo.registrarUsuario(usuario);
+        return new ActionListener() {
+            @Override public void actionPerformed (ActionEvent e) {
+                Usuario usuario = new Usuario();
+                usuario.setEmail(frameLogin.getjTextFieldUsuario().getText());
+                usuario.setSenha(String.valueOf( frameLogin.getjPasswordFieldSenha().getPassword() ));
+                UsuarioBO userBo = new UsuarioBO();
+                usuario = userBo.realizarLogin(usuario);
+                if(usuario != null){
+                    if(usuario.getClass().getSimpleName().equals(SolicitanteEnum.PROFESSOR))
+                        Util.abrirJDialogCentralizado(new JDialogProfessor(frameLogin, true));
+                    else
+                        Util.abrirJDialogCentralizado(new JDialogAluno(frameLogin, true));
+                    frameLogin.dispose();
+                }
              }
          };
     }
