@@ -18,6 +18,14 @@ import javax.swing.JTextField;
 public class Inicio extends javax.swing.JFrame {
 
     private javax.swing.JButton jButtonCriarConta;
+    private javax.swing.JButton jButtonEntrar;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabelRecupararSenha;
+    private javax.swing.JLabel jLabelSgoo;
+    private javax.swing.JLabel jLabelUsuario;
+    private javax.swing.JPanel jPanelCadastroLogin;
+    private javax.swing.JPasswordField jPasswordFieldSenha;
+    private javax.swing.JTextField jTextFieldUsuario;
 
     public JButton getjButtonCriarConta() {
         return jButtonCriarConta;
@@ -34,14 +42,6 @@ public class Inicio extends javax.swing.JFrame {
     public JTextField getjTextFieldUsuario() {
         return jTextFieldUsuario;
     }
-    private javax.swing.JButton jButtonEntrar;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabelRecupararSenha;
-    private javax.swing.JLabel jLabelSgoo;
-    private javax.swing.JLabel jLabelUsuario;
-    private javax.swing.JPanel jPanelCadastroLogin;
-    private javax.swing.JPasswordField jPasswordFieldSenha;
-    private javax.swing.JTextField jTextFieldUsuario;
 
     /**
      * Creates new form Inicio
@@ -139,11 +139,6 @@ public class Inicio extends javax.swing.JFrame {
         jPanelCadastroLogin.add(jLabelSgoo, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, -1, -1));
 
         jButtonCriarConta.setText("Criar Conta");
-        jButtonCriarConta.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonCriarContaActionPerformed(evt);
-            }
-        });
         jPanelCadastroLogin.add(jButtonCriarConta, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 100, 40));
 
         jLabelRecupararSenha.setForeground(new java.awt.Color(0, 0, 255));
@@ -162,13 +157,6 @@ public class Inicio extends javax.swing.JFrame {
 
         setSize(new java.awt.Dimension(416, 338));
         setLocationRelativeTo(null);
-    }
-
-    private void jButtonCriarContaActionPerformed(java.awt.event.ActionEvent evt) {
-        Util.abrirJDialogCentralizado(new JDialogCadastrarUsuario(this, true));
-
-        //this.dispose();
-
     }
 
     private void jButtonEntrarActionPerformed(java.awt.event.ActionEvent evt) {
