@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author high-stakes
+ * @author JosielFaleiros
  */
 public class Sgoo {
         /**

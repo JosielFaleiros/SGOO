@@ -6,12 +6,8 @@
 package br.edu.utfpr.es.oi.gui;
 
 import br.edu.utfpr.es.oi.util.Util;
-import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JButton;
-import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
