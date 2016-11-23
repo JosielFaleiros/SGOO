@@ -5,6 +5,8 @@
  */
 package br.edu.utfpr.es.oi.model;
 
+import java.util.List;
+
 /**
  *
  * @author JosielFaleiros
@@ -32,4 +34,10 @@ public class UsuarioBO {
         }
         return false;
     }
+    
+    public List<Usuario> buscarAlunosByQuery(String query){
+        UsuarioDAO userdao = new UsuarioDAO();
+        return userdao.buscarUsuarioByQuery(query);
+    }
+
 }

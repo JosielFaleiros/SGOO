@@ -17,6 +17,7 @@ public class OrientacaoBO {
         return userdao.todosUsuariosPelaPesquisa(query);
     }
     
+    //aluno solicitando
     public void solicitarOrientacaoAluno(Aluno aluno, Professor professor){
         OrientacaoDAO orientdao = new OrientacaoDAO();
         Orientacao orientacao = new Orientacao();
@@ -26,7 +27,8 @@ public class OrientacaoBO {
         orientacao.setStatus(StatusEnum.SOLICITADA);
         orientdao.adicionarOrientacao(orientacao);
     }
-    
+
+    // profesor solicitando;
     public void solicitarOrientacaoProfessor(Aluno aluno, Professor professor){
         OrientacaoDAO orientdao = new OrientacaoDAO();
         Orientacao orientacao = new Orientacao();
