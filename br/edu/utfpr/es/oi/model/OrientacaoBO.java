@@ -5,6 +5,8 @@
  */
 package br.edu.utfpr.es.oi.model;
 
+import br.edu.utfpr.es.oi.model.dao.OrientacaoDAO;
+import br.edu.utfpr.es.oi.model.dao.UsuarioDAO;
 import java.util.List;
 
 /**
@@ -12,11 +14,7 @@ import java.util.List;
  * @author JosielFaleiros
  */
 public class OrientacaoBO {
-    public List<Usuario> buscarUsuarios(String query){
-        UsuarioDAO userdao = new UsuarioDAO();
-        return userdao.todosUsuariosPelaPesquisa(query);
-    }
-    
+
     //aluno solicitando
     public void solicitarOrientacaoAluno(Aluno aluno, Professor professor){
         OrientacaoDAO orientdao = new OrientacaoDAO();

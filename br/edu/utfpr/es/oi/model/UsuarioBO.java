@@ -5,6 +5,7 @@
  */
 package br.edu.utfpr.es.oi.model;
 
+import br.edu.utfpr.es.oi.model.dao.UsuarioDAO;
 import java.util.List;
 
 /**
@@ -37,7 +38,12 @@ public class UsuarioBO {
     
     public List<Usuario> buscarAlunosByQuery(String query){
         UsuarioDAO userdao = new UsuarioDAO();
-        return userdao.buscarUsuarioByQuery(query);
+        return userdao.buscarUsuarioByQuery(SolicitanteEnum.ALUNO, query);
+    }
+    
+    public List<Usuario> buscarProfessoresByQuery(String query){
+        UsuarioDAO userdao = new UsuarioDAO();
+        return userdao.buscarUsuarioByQuery(SolicitanteEnum.PROFESSOR, query);
     }
 
 }
