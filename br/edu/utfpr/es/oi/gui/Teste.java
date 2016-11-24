@@ -12,12 +12,12 @@ import br.edu.utfpr.es.oi.util.Util;
  * @author JoaoPaulo
  */
 public class Teste {
-    
+
     public static void main(String[] args) {
         Inicio input = new Inicio();
         input.setVisible(true);
         input.dispose();
-        Util.abrirJDialogCentralizado(new JDialogAluno(input, true));
+        Util.abrirJFrameCentralizado(new Inicio());
     }
-    
+
 }

@@ -156,23 +156,23 @@ public class Inicio extends javax.swing.JFrame {
     }
 
 
-    private static void criaBanco() throws SQLException {
-
-//        HibernateUtil.setUser("root");
-//        HibernateUtil.setPass("root");
+//    private static void criaBanco() throws SQLException {
 //
-//        Connection conexao = Conexao.getConnection();
+////        HibernateUtil.setUser("root");
+////        HibernateUtil.setPass("root");
+////
+////        Connection conexao = Conexao.getConnection();
+////
+////        try {
+////            conexao.createStatement().execute("create database if not EXISTS sgoo");
+////            conexao.createStatement().execute("use sgoo");
+////            HibernateUtil.criarSchema();
+////
+////        } catch (SQLException e) {
+////            JOptionPane.showMessageDialog(null, "Problema ao criar Banco");
+////        } catch (Exception e) {
+////            JOptionPane.showMessageDialog(null, "Erro inesperado ao tentar iniciar");
+////        }
 //
-//        try {
-//            conexao.createStatement().execute("create database if not EXISTS sgoo");
-//            conexao.createStatement().execute("use sgoo");
-//            HibernateUtil.criarSchema();
-//
-//        } catch (SQLException e) {
-//            JOptionPane.showMessageDialog(null, "Problema ao criar Banco");
-//        } catch (Exception e) {
-//            JOptionPane.showMessageDialog(null, "Erro inesperado ao tentar iniciar");
-//        }
-
-    }
+//    }
 }

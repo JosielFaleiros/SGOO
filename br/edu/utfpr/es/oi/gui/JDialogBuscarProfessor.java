@@ -13,6 +13,8 @@ public class JDialogBuscarProfessor extends javax.swing.JDialog {
 
     /**
      * Creates new form JDialogBuscarProfessor
+     * @param parent
+     * @param modal
      */
     public JDialogBuscarProfessor(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -41,7 +43,6 @@ public class JDialogBuscarProfessor extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(640, 480));
         setMinimumSize(new java.awt.Dimension(640, 480));
-        setPreferredSize(new java.awt.Dimension(640, 480));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -70,12 +71,10 @@ public class JDialogBuscarProfessor extends javax.swing.JDialog {
                 false, false, false, false
             };
 
-            @Override
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
 
-            @Override
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
@@ -91,7 +90,6 @@ public class JDialogBuscarProfessor extends javax.swing.JDialog {
         jButtonFechar.setBackground(new java.awt.Color(255, 102, 102));
         jButtonFechar.setText("Fechar");
         jButtonFechar.addActionListener(new java.awt.event.ActionListener() {
-            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonFecharActionPerformed(evt);
             }

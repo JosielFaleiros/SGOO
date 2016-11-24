@@ -97,7 +97,6 @@ public class JDialogProfessor extends javax.swing.JDialog {
         jTextField3.setEditable(false);
         jTextField3.setEnabled(false);
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
             }
@@ -115,7 +114,6 @@ public class JDialogProfessor extends javax.swing.JDialog {
         jButtonReuniao.setMinimumSize(new java.awt.Dimension(41, 25));
         jButtonReuniao.setPreferredSize(new java.awt.Dimension(41, 25));
         jButtonReuniao.addActionListener(new java.awt.event.ActionListener() {
-            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonReuniaoActionPerformed(evt);
             }
@@ -158,7 +156,6 @@ public class JDialogProfessor extends javax.swing.JDialog {
         jButtonOrientador.setMinimumSize(new java.awt.Dimension(41, 25));
         jButtonOrientador.setPreferredSize(new java.awt.Dimension(41, 25));
         jButtonOrientador.addActionListener(new java.awt.event.ActionListener() {
-            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonOrientadorActionPerformed(evt);
             }
@@ -205,7 +202,6 @@ public class JDialogProfessor extends javax.swing.JDialog {
         jButtonOrientador1.setMinimumSize(new java.awt.Dimension(41, 25));
         jButtonOrientador1.setPreferredSize(new java.awt.Dimension(41, 25));
         jButtonOrientador1.addActionListener(new java.awt.event.ActionListener() {
-            @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonOrientador1ActionPerformed(evt);
             }
